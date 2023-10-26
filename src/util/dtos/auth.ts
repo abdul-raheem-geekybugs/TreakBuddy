@@ -20,7 +20,7 @@ export const ResetPasswordDto = Joi.object({
 
 export const VerifyOtpDto = Joi.object({
     userId: Joi.string().required(),
-    otp: Joi.number().min(6).required,
+    otp: Joi.string().min(6).required(),
 });
 
 export const SendOtpDto = Joi.object({
